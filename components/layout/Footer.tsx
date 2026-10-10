@@ -11,29 +11,29 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-mist/20">
           <div className="lg:col-span-6">
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-paper rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-paper rounded-full p-0.5 flex items-center justify-center flex-shrink-0 shadow-md overflow-hidden">
                 <Image
                   src="/images/logo.png"
-                  alt="Marcos Construção e Reforma — soluções residenciais e consertos em geral"
+                  alt="JR Empreiteira — soluções residenciais e consertos em geral"
                   width={60}
                   height={60}
-                  className="object-contain w-full h-full"
+                  className="object-contain w-full h-full rounded-full"
                 />
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Marcos Construção e Reforma
+                  JR Empreiteira
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Reparos e manutenção de telhados
+                  Construções e reformas
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Atendimento de segunda a sábado, das 6h às 20h.
+              Atendimento de segunda a sexta-feira, das 8h às 17h.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <span>+55 83 8835-7756</span>
+              <span>{CLINIC_INFO.contact.phone}</span>
             </div>
           </div>
 
@@ -43,11 +43,11 @@ export default function Footer() {
                 Atendimento Rápido & WhatsApp
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Precisa agendar uma avaliação, tirar dúvidas ou solicitar atendimento de telhados?
+                Precisa tirar dúvidas ou solicitar um orçamento?
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
-                  href={`https://api.whatsapp.com/send?phone=558388357756`}
+                  href={`https://api.whatsapp.com/send?phone=5511941943696`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-body text-15 font-semibold text-lime hover:underline"
@@ -153,7 +153,7 @@ export default function Footer() {
               <div>
                 <span className="text-paper/50 block text-13">Telefone & WhatsApp:</span>
                 <a
-                  href={`https://api.whatsapp.com/send?phone=558388357756`}
+                  href={`https://api.whatsapp.com/send?phone=5511941943696`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-lime transition-colors font-medium"
@@ -179,8 +179,8 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. Todos os direitos reservados.
           </div>
           <div className="flex items-center gap-6">
-            <span>Atendimento de segunda a sábado, das 6h às 20h</span>
-            <span>Marcos Construção e Reforma</span>
+            <span>Segunda a sexta-feira · 8h às 17h</span>
+            <span>JR Empreiteira</span>
           </div>
         </div>
       </div>

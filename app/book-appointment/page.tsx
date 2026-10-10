@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Solicitar orçamento de telhados',
   description:
-    'Solicite um orçamento para reparo de infiltrações, substituição de telhas, limpeza de calhas ou manutenção. Atendimento de segunda a sábado, das 6h às 20h.',
+    'Solicite um orçamento para reparo de infiltrações, substituição de telhas, limpeza de calhas ou manutenção. Atendimento de segunda a sexta-feira, das 8h às 17h.',
   pathname: '/book-appointment/',
 });
 
@@ -67,7 +67,7 @@ export default function BookAppointmentPage() {
                     Prefere falar diretamente conosco agora? Clique abaixo para abrir o WhatsApp.
                   </p>
                   <a
-                    href="https://api.whatsapp.com/send?phone=558388357756"
+                    href="https://api.whatsapp.com/send?phone=5511941943696"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-display text-17 text-forest font-semibold block hover:underline"
@@ -145,7 +145,7 @@ export default function BookAppointmentPage() {
                 <div className="space-y-3 font-body text-13 text-forest-ink/80">
                   <div>
                     <span className="text-forest-ink/60 block">WhatsApp:</span>
-                    <a href="https://api.whatsapp.com/send?phone=558388357756" target="_blank" rel="noopener noreferrer" className="font-medium text-forest hover:underline">
+                    <a href="https://api.whatsapp.com/send?phone=5511941943696" target="_blank" rel="noopener noreferrer" className="font-medium text-forest hover:underline">
                       {CLINIC_INFO.contact.whatsapp}
                     </a>
                   </div>

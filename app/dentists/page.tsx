@@ -12,9 +12,9 @@ import { DENTISTS, SERVICES, CLINIC_INFO } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Equipe Marcos Construção e Reforma',
+  title: 'Equipe JR Empreiteira',
   description:
-    'Conheça a equipe da Marcos Construção e Reforma, especializada em soluções residenciais e consertos em geral.',
+    'Conheça a equipe da JR Empreiteira, especializada em soluções residenciais e consertos em geral.',
   pathname: '/dentists/',
 });
 
@@ -24,13 +24,13 @@ export default function DentistsPage() {
       {/* SECTION 1: Introduction */}
       <section className="py-16 md:py-24 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Equipe Marcos Construção e Reforma', path: '/dentists/' }]} />
+          <Breadcrumbs items={[{ name: 'Equipe JR Empreiteira', path: '/dentists/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  Equipe Marcos Construção e Reforma
+                  Equipe JR Empreiteira
                 </span>
                 <WordRevealH1 text="Soluções para construção e reforma." />
                 <div className="mt-8">
@@ -42,7 +42,7 @@ export default function DentistsPage() {
             <div className="lg:col-span-4 lg:pl-6 flex flex-col justify-end">
               <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
                 <div className="p-6 bg-paper border border-mist space-y-2 font-body text-13 text-forest-ink/80 shadow-sm">
-                  <span className="font-medium text-forest block">Atendimento de segunda a sábado, das 6h às 20h</span>
+                  <span className="font-medium text-forest block">Atendimento de segunda a sexta-feira, das 8h às 17h</span>
                   <p className="text-forest-ink/70">
                     Fale com a equipe para confirmar o serviço que você precisa.
                   </p>
@@ -219,7 +219,7 @@ export default function DentistsPage() {
                   “reparos Reparo localizado pode trazer seu proteção em 1 dia — unindo tecnologia, agilidade e o acolhimento que você merece.”
                 </span>
                 <span className="font-body text-13 text-forest block mt-2 font-medium">
-                  — Equipe Marcos Construção e Reforma
+                  — Equipe JR Empreiteira
                 </span>
               </div>
             </div>

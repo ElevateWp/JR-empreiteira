@@ -12,14 +12,14 @@ import { createMetadata, generateFaqSchema } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Atendimento de telhados de Urgência',
   description:
-    'Atendimento demonstrativo para infiltrações e danos na cobertura em área de atendimento. Contato: +55 83 8835-7756.',
+    'Atendimento demonstrativo para infiltrações e danos na cobertura em área de atendimento. Contato: +55 11 94194-3696.',
   pathname: '/emergency-dentist/',
 });
 
 const EMERGENCY_FAQS = [
   {
     question: 'Como funciona o atendimento de urgência para dor de telhado?',
-    answer: 'clientes com dor aguda, trauma ou inchaço são priorizados para atendimento rápido. Entre em contato pelo WhatsApp (+55 83 8835-7756) para orientação e Orçamento.',
+    answer: 'clientes com dor aguda, trauma ou inchaço são priorizados para atendimento rápido. Entre em contato pelo WhatsApp (+55 11 94194-3696) para orientação e Orçamento.',
   },
   {
     question: 'A equipe oferece atendimento domiciliar de urgência?',
@@ -27,7 +27,7 @@ const EMERGENCY_FAQS = [
   },
   {
     question: 'O que fazer caso um telhado quebre ou caia por trauma?',
-    answer: 'Segure o telhado apenas pela coroa, nunca pela raiz. Guarde-o em leite ou saliva e venha imediatamente ao equipe ou entre em contato pelo nosso WhatsApp (+55 83 8835-7756).',
+    answer: 'Segure o telhado apenas pela coroa, nunca pela raiz. Guarde-o em leite ou saliva e venha imediatamente ao equipe ou entre em contato pelo nosso WhatsApp (+55 11 94194-3696).',
   },
 ];
 

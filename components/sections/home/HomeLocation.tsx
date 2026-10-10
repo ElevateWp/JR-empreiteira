@@ -103,13 +103,13 @@ export default function HomeLocation() {
               <div className="relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/logo.png"
-                  alt="Marcos Construção e Reforma — soluções residenciais e consertos em geral"
+                  alt="JR Empreiteira — soluções residenciais e consertos em geral"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-contain"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  Marcos Construção e Reforma
+                  JR Empreiteira
                 </div>
               </div>
             </AnimateOnScroll>
@@ -118,16 +118,16 @@ export default function HomeLocation() {
               <div className="bg-paper border border-mist p-6 shadow-sm flex flex-col justify-between">
                 <div>
                   <span className="font-body text-13 text-forest block mb-1 font-medium uppercase tracking-wider">
-                    Atendimento de telhados de Excelência
+                    Construções e reformas
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Reparos e manutenção de telhados
+                    Serviços de construção, alvenaria, revestimento e pintura
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
                     Consulte a equipe sobre a área de atendimento.
                   </p>
                   <p className="font-body text-13 text-forest-ink/70 mb-3 leading-relaxed">
-
+                    Empresa identificada como de propriedade feminina.
                   </p>
                   <div className="flex items-center gap-2 text-13 font-body text-forest">
                     <span className="w-2 h-2 rounded-full bg-forest animate-pulse" />

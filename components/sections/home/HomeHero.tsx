@@ -102,7 +102,7 @@ export default function HomeHero() {
     };
   }, []);
 
-  const headline = 'Reparos de telhados com cuidado, técnica e transparência.';
+  const headline = 'Construção e reformas com cuidado, técnica e transparência.';
   const headlineWords = headline.split(' ');
 
   return (
@@ -111,8 +111,8 @@ export default function HomeHero() {
       className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-paper overflow-hidden py-12 sm:py-16 md:py-24"
     >
       <Image
-        src="https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?auto=format&fit=crop&w=1600&q=85"
-        alt="Imagem de banco ilustrativa de atendimento de telhados"
+        src="/images/jr-45.jpg"
+        alt="Fachada de imóvel reformado pela JR Empreiteira"
         fill
         priority
         sizes="100vw"
@@ -129,15 +129,15 @@ export default function HomeHero() {
           <div className="lg:col-span-8 flex flex-col justify-center">
             {/* Semantic Single H1 */}
             <div className="flex items-center gap-3 mb-4 md:mb-5">
-              <span aria-hidden="true" className="h-px w-8 bg-[#1769B5]" />
-              <span className="font-body text-[11px] text-[#667B96] uppercase tracking-[0.14em]">
-                Seu telhado, protegido.
+              <span aria-hidden="true" className="h-px w-8 bg-[#F21D2F]" />
+              <span className="font-body text-[11px] text-[#737373] uppercase tracking-[0.14em]">
+                Construção e reforma
               </span>
             </div>
             <h1
               ref={h1Ref}
               aria-label={headline}
-              className="font-display text-[#142B4D] text-33 sm:text-41 md:text-52 lg:text-65 xl:text-81 leading-[1.05] tracking-[-0.03em] font-normal mb-6 md:mb-8 max-w-4xl"
+              className="font-display text-[#1A1A1A] text-33 sm:text-41 md:text-52 lg:text-65 xl:text-81 leading-[1.05] tracking-[-0.03em] font-normal mb-6 md:mb-8 max-w-4xl"
             >
               {headlineWords.map((word, idx) => (
                 <React.Fragment key={idx}>
@@ -146,7 +146,7 @@ export default function HomeHero() {
                       ref={(el) => {
                         if (el) wordsRef.current[idx] = el;
                       }}
-                      className={`inline-block will-change-transform ${['telhados', 'cuidado,', 'transparência.'].includes(word) ? 'text-[#1769B5]' : ''}`}
+                      className={`inline-block will-change-transform ${['reformas', 'cuidado,', 'transparência.'].includes(word) ? 'text-[#F21D2F]' : ''}`}
                     >
                       {word}
                     </span>
@@ -162,7 +162,7 @@ export default function HomeHero() {
               ref={paraRef}
               className="font-body text-15 sm:text-17 md:text-21 text-forest-ink/90 leading-relaxed mb-8 md:mb-10 max-w-2xl"
             >
-              A Marcos Construção e Reforma oferece serviços de reparo e manutenção de telhados.
+              A JR Empreiteira, Construções e Reformas LTDA realiza serviços de alvenaria, revestimentos, instalação de portas e pintura. Solicite um orçamento sem compromisso.
             </p>
 
             <div
@@ -173,7 +173,7 @@ export default function HomeHero() {
                 Solicitar orçamento
               </Button>
               <Button
-                href={`https://api.whatsapp.com/send?phone=558388357756`}
+                href={`https://wa.me/${CLINIC_INFO.contact.whatsapp.replace(/[^0-9]/g, '')}`}
                 variant="ghost"
                 size="lg"
                 className="w-full sm:w-auto font-medium"
@@ -184,9 +184,9 @@ export default function HomeHero() {
 
             <div
               ref={locationRef}
-              className="font-body text-13 text-[#142B4D]/70 flex flex-wrap items-center gap-2"
+              className="font-body text-13 text-[#1A1A1A]/70 flex flex-wrap items-center gap-2"
             >
-              <span className="font-medium text-[#142B4D]">Atendimento de segunda a sábado, das 6h às 20h</span>
+              <span className="font-medium text-[#1A1A1A]">Segunda a sexta-feira, das 8h às 17h</span>
               <span className="hidden sm:inline">•</span>
               <span>{CLINIC_INFO.primaryLocation.street}</span>
               <span className="hidden sm:inline">•</span>
@@ -198,16 +198,16 @@ export default function HomeHero() {
             ref={infoRef}
             className="lg:col-span-4 lg:pl-4 flex flex-col justify-center"
           >
-            <div className="p-6 sm:p-8 bg-[#F2F7FC] border border-[#D9E4F0] shadow-sm flex flex-col space-y-4">
-              <span className="font-body text-13 text-[#142B4D] uppercase tracking-wider font-semibold">
-                Soluções em Telhados
+            <div className="p-6 sm:p-8 bg-[#F5F5F5] border border-[#DDDDDD] shadow-sm flex flex-col space-y-4">
+              <span className="font-body text-13 text-[#1A1A1A] uppercase tracking-wider font-semibold">
+                Construções e reformas
               </span>
-              <p className="font-body text-13 sm:text-15 text-[#142B4D]/90 leading-relaxed">
-                <strong className="text-[#142B4D] font-semibold">&ldquo;Marcos Construção e Reforma&rdquo;</strong> &mdash; reparos e manutenção de telhados.
+              <p className="font-body text-13 sm:text-15 text-[#1A1A1A]/90 leading-relaxed">
+                <strong className="text-[#1A1A1A] font-semibold">&ldquo;JR Empreiteira&rdquo;</strong> &mdash; construções e reformas em São Paulo.
               </p>
-              <div className="pt-3 border-t border-[#D9E4F0] flex items-center justify-between text-13 font-body text-[#142B4D]/70">
-                <span>Aberto de segunda a sábado</span>
-                <span className="text-[#142B4D] font-semibold">Segunda a sábado · 6h às 20h</span>
+              <div className="pt-3 border-t border-[#DDDDDD] flex items-center justify-between text-13 font-body text-[#1A1A1A]/70">
+                <span>Segunda a sexta-feira</span>
+                <span className="text-[#1A1A1A] font-semibold">8h às 17h</span>
               </div>
             </div>
           </div>

@@ -111,12 +111,12 @@ export default function PagePreloader() {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#081A40] text-paper overflow-hidden select-none"
+      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#101010] text-paper overflow-hidden select-none"
       style={{ willChange: 'transform' }}
-      aria-label="Carregando Marcos Construção e Reforma"
+      aria-label="Carregando JR Empreiteira"
     >
       {/* Subtle Background Radial Aura */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(35,139,104,0.10)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(242,29,47,0.10)_0%,transparent_70%)] pointer-events-none" />
 
       <div
         ref={contentRef}
@@ -125,15 +125,15 @@ export default function PagePreloader() {
         {/* Animated 3D Logo */}
         <div
           ref={logoRef}
-          className="relative w-20 h-20 sm:w-24 sm:h-24 bg-paper rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#35A9E0]/40"
+          className="relative w-20 h-20 sm:w-24 sm:h-24 bg-paper rounded-full shadow-2xl p-0.5 flex items-center justify-center mb-6 border border-[#FF4A18]/40 overflow-hidden"
         >
           <Image
             src="/images/logo.png"
-            alt="Marcos Construção e Reforma"
+            alt="JR Empreiteira"
             width={80}
             height={80}
             priority
-            className="object-contain"
+            className="object-contain rounded-full"
           />
         </div>
 
@@ -156,7 +156,7 @@ export default function PagePreloader() {
           ref={subtitleRef}
           className="font-body text-12 sm:text-13 text-paper/85 uppercase tracking-[0.15em]"
         >
-          Marcos Construção e Reforma • Atendimento de segunda a sábado, das 6h às 20h
+          JR Empreiteira • Segunda a sexta-feira, das 8h às 17h
         </p>
       </div>
     </div>

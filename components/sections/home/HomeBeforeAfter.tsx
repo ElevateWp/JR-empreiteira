@@ -10,19 +10,21 @@ export default function HomeBeforeAfter() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <AnimateOnScroll animation="fade-right" duration={0.85} className="lg:col-span-5">
             <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-              Serviços de reparo e manutenção de coberturas
+              Um serviço finalizado
             </span>
             <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-              Cuidado de telhados para cada proteção
+              Alvenaria, portas e pintura
             </h2>
             <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-              As fotos desta seção são imagens de banco usadas como referência visual para visitas técnicas e cuidados de telhados. Elas não representam clientes ou procedimentos realizados na empresa.
+              No serviço informado pela empresa, foi construído um balcão de alvenaria com laje e revestimento, portas foram instaladas em novos vãos e as paredes receberam preparação e pintura fina. Entre em contato para solicitar um orçamento sem compromisso.
             </p>
             <Link
-              href="/cosmetic-dentistry/"
+              href="https://wa.me/5511941943696"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-body text-15 text-forest font-medium hover:underline underline-offset-4"
             >
-              Explore cosmetic home design →
+              Fale com a JR Empreiteira →
             </Link>
           </AnimateOnScroll>
 
@@ -30,26 +32,26 @@ export default function HomeBeforeAfter() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="https://images.unsplash.com/photo-1677031320827-61e5047ce0c6?auto=format&fit=crop&w=1600&q=85"
-                  alt="Imagem de banco ilustrativa de uma Proprietário com sua telhadista"
+                  src="/images/jr-40.jpg"
+                  alt="Banheiro com revestimento decorativo e nicho"
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#081A40]/85 text-white font-body text-12 px-3 py-1">
-                  Imagem ilustrativa
+                <span className="absolute bottom-3 left-3 bg-[#101010]/85 text-white font-body text-12 px-3 py-1">
+                  Revestimento e nicho
                 </span>
               </div>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="https://images.unsplash.com/photo-1600093652298-e57ee8aba769?auto=format&fit=crop&w=1600&q=85"
-                  alt="Imagem de banco ilustrativa de atendimento de telhados"
+                  src="/images/jr-36.jpg"
+                  alt="Área coberta reformada com revestimento e piso claro"
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#081A40]/85 text-white font-body text-12 px-3 py-1">
-                  Imagem ilustrativa
+                <span className="absolute bottom-3 left-3 bg-[#101010]/85 text-white font-body text-12 px-3 py-1">
+                  Área coberta
                 </span>
               </div>
             </div>

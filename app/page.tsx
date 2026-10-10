@@ -16,9 +16,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Reparo e manutenção de telhados',
+  title: 'Construções e reformas em São Paulo',
   description:
-    'Marcos Construção e Reforma: reparo e manutenção de telhados. Atendimento de segunda a sábado, das 6h às 20h.',
+    'JR Empreiteira, Construções e Reformas LTDA: serviços de alvenaria, revestimento, instalação de portas e pintura. Atendimento de segunda a sexta, das 8h às 17h.',
   pathname: '/',
 });
 

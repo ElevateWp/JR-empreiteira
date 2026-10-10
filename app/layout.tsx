@@ -10,23 +10,26 @@ import { generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3456'),
   title: {
-    default: 'Marcos Construção e Reforma',
+    default: 'JR Empreiteira',
     template: '%s',
   },
   description:
-    'Marcos Construção e Reforma: serviços de reparo e manutenção de telhados. Atendimento de segunda a sábado, das 6h às 20h. Contato: +55 83 8835-7756.',
+    'JR Empreiteira, Construções e Reformas LTDA. Construções, alvenaria, revestimentos, instalação de portas e pintura em São Paulo. Atendimento de segunda a sexta, das 8h às 17h. Contato: +55 11 94194-3696.',
   keywords: [
-    'Marcos Construção e Reforma',
-    'reparo e manutenção de telhados',
-    'telhadista',
+    'JR Empreiteira',
+    'construções e reformas',
+    'alvenaria e pintura',
   ],
-  authors: [{ name: 'Marcos Construção e Reforma' }],
+  authors: [{ name: 'JR Empreiteira' }],
   icons: {
     icon: [
       { url: '/icon.png', sizes: '32x32', type: 'image/png' },
       { url: '/icon.png', sizes: '192x192', type: 'image/png' },
     ],
-    shortcut: [{ url: '/favicon.png', type: 'image/png' }],
+    shortcut: [
+      { url: '/favicon.png', type: 'image/png' },
+      { url: '/favicon.ico', type: 'image/x-icon' },
+    ],
     apple: [{ url: '/icon.png', sizes: '180x180', type: 'image/png' }],
   },
 };
@@ -46,7 +49,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F2F7FC] selection:text-[#142B4D]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F5F5F5] selection:text-[#1A1A1A]">
         <PagePreloader />
         <JsonLd data={generateLocalBusinessSchema()} />
         <a href="#main-content" className="skip-link">

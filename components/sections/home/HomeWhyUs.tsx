@@ -5,20 +5,20 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
 const REASONS = [
   {
-    title: 'Proteção da cobertura',
-    description: 'Priorizamos avaliar o reparo localizado e a compatibilidade dos materiais com a cobertura existente.',
+    title: 'Alvenaria e construção',
+    description: 'Serviços de alvenaria planejados de acordo com as necessidades de cada imóvel.',
   },
   {
-    title: 'Inspeção detalhada da cobertura',
-    description: 'A equipe inspeciona os pontos visíveis de infiltração e combina o escopo antes de iniciar o reparo.',
+    title: 'Acabamento cuidadoso',
+    description: 'Revestimentos e acabamentos internos e externos realizados com atenção aos detalhes.',
   },
   {
-    title: 'Atendimento transparente e seguro',
-    description: 'O serviço é explicado com clareza e as medidas de acesso e segurança são combinadas previamente.',
+    title: 'Pintura e reforma',
+    description: 'Preparação de paredes, massa, seladora e pintura fina fazem parte dos serviços informados pela empresa.',
   },
   {
-    title: 'Ferramentas adequadas ao serviço',
-    description: 'A equipe utiliza ferramentas adequadas ao tipo de cobertura e às condições de acesso do imóvel.',
+    title: 'Orçamento sem compromisso',
+    description: 'Entre em contato para conversar sobre o serviço e solicitar um orçamento.',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function HomeWhyUs() {
                 Nossa forma de trabalhar
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
-                Por que escolher a empresa Marcos Construção e Reforma
+                Por que escolher a empresa JR Empreiteira
               </h2>
 
               <div className="divide-y divide-mist">
@@ -57,7 +57,7 @@ export default function HomeWhyUs() {
             </AnimateOnScroll>
           </div>
 
-          {/* Stock photos shown for illustration */}
+          {/* Imagens de trabalhos fornecidas pela empresa */}
           <div className="lg:col-span-6">
             <AnimateOnScroll animation="fade-left" duration={0.85}>
               <div className="grid grid-cols-2 gap-3">
@@ -65,38 +65,38 @@ export default function HomeWhyUs() {
                 <div className="col-span-2 relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.06} className="w-full h-full">
                     <Image
-                      src="https://images.unsplash.com/photo-1634750009079-6bf7bede038b?auto=format&fit=crop&w=1600&q=85"
-                      alt="Imagem de banco ilustrativa de atendimento de telhados"
+                      src="/images/jr-45.jpg"
+                      alt="Fachada de imóvel reformado"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#142B4D]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-                    Imagem ilustrativa · Atendimento de telhados
+                  <div className="absolute bottom-3 left-3 bg-[#1A1A1A]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
+                    Fachada
                   </div>
                 </div>
                 {/* Second interior image */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="https://images.unsplash.com/photo-1771479755055-6a305f50845e?auto=format&fit=crop&w=1600&q=85"
-                    alt="Imagem de banco ilustrativa de avaliação de telhados"
+                    src="/images/jr-43.jpg"
+                    alt="Sala reformada com piso claro"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover"
                   />
                 </div>
                 {/* Doctor portrait */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F2F7FC] overflow-hidden border border-mist shadow-sm">
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F5F5F5] overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="https://images.unsplash.com/photo-1760544137672-c22ce36ea818?auto=format&fit=crop&w=1600&q=85"
-                    alt="Imagem de banco ilustrativa de atendimento a um Proprietário"
+                    src="/images/jr-36.jpg"
+                    alt="Área coberta com revestimento de parede e piso claro"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#142B4D]/80 text-paper font-body text-12 px-3 py-2 text-center">
-                    Imagem ilustrativa · Atendimento
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#1A1A1A]/80 text-paper font-body text-12 px-3 py-2 text-center">
+                    Área coberta
                   </div>
                 </div>
               </div>

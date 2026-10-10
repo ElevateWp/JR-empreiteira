@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contato & Localização',
   description:
-    'Entre em contato com a Marcos Construção e Reforma pelo telefone +55 83 8835-7756. Atendimento de segunda a sábado, das 6h às 20h.',
+    'Entre em contato com a JR Empreiteira pelo telefone +55 11 94194-3696. Atendimento de segunda a sexta, das 8h às 17h.',
   pathname: '/contact/',
 });
 
@@ -31,7 +31,7 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Atendimento & Orçamento
                 </span>
-                <WordRevealH1 text="Fale com nossa equipe de reparos de telhados." />
+                <WordRevealH1 text="Fale com a JR Empreiteira." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
                   Entre em contato com a equipe pelo telefone ou WhatsApp.
                 </p>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                       <div>
                         <span className="font-body text-13 text-forest font-semibold block">WhatsApp Direto</span>
                         <a
-                          href="https://api.whatsapp.com/send?phone=558388357756"
+                          href="https://api.whatsapp.com/send?phone=5511941943696"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="font-display text-21 text-forest font-bold hover:underline"
@@ -154,7 +154,7 @@ export default function ContactPage() {
                       Consultar a equipe
                     </Button>
                     <a
-                      href="https://api.whatsapp.com/send?phone=558388357756"
+                      href="https://api.whatsapp.com/send?phone=5511941943696"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-body text-13 text-lime hover:underline font-semibold"

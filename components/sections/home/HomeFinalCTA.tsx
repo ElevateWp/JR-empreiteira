@@ -25,7 +25,7 @@ export default function HomeFinalCTA() {
               Solicitar orçamento
             </Button>
             <Button
-              href={`https://api.whatsapp.com/send?phone=558388357756`}
+              href={`https://api.whatsapp.com/send?phone=5511941943696`}
               variant="ghost"
               size="lg"
               className="text-paper border-paper/30 hover:border-paper hover:bg-paper/10"

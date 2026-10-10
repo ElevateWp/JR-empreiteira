@@ -22,7 +22,7 @@ export default function HomeStats() {
                   <CountingNumber
                     value={stat.value}
                     suffix={stat.suffix}
-                    decimals={stat.suffix.includes('.') ? 1 : 0}
+                    decimals={Number.isInteger(stat.value) ? 0 : 1}
                   />
                 </div>
                 <span className="font-body text-13 text-forest block font-medium mb-1">

@@ -71,7 +71,7 @@ export function generateLocalBusinessSchema() {
     telephone: CLINIC_INFO.contact.phone,
     ...(CLINIC_INFO.primaryLocation.city || CLINIC_INFO.primaryLocation.street ? { address: {
       '@type': 'PostalAddress',
-      ...(CLINIC_INFO.primaryLocation.street ? { streetAddress: CLINIC_INFO.primaryLocation.street } : {}),
+      ...(CLINIC_INFO.primaryLocation.street ? { streetAddress: [CLINIC_INFO.primaryLocation.street, CLINIC_INFO.primaryLocation.suite].filter(Boolean).join(' - ') } : {}),
       ...(CLINIC_INFO.primaryLocation.city ? { addressLocality: CLINIC_INFO.primaryLocation.city } : {}),
       ...(CLINIC_INFO.primaryLocation.state ? { addressRegion: CLINIC_INFO.primaryLocation.state } : {}),
       ...(CLINIC_INFO.primaryLocation.postalCode ? { postalCode: CLINIC_INFO.primaryLocation.postalCode } : {}),
@@ -84,7 +84,10 @@ export function generateLocalBusinessSchema() {
     } } : {}),
     openingHoursSpecification: CLINIC_INFO.schedule
       .filter((item) => item.hours !== 'Fechado')
-      .map((item) => ({
+      .map((item) => {
+        const [, opens, closes] = item.hours.match(/(\d{1,2})h[–-](\d{1,2})h/) ?? [];
+        if (!opens || !closes) return null;
+        return ({
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: {
           'Segunda-feira': 'Monday',
@@ -95,9 +98,10 @@ export function generateLocalBusinessSchema() {
           'Sábado': 'Saturday',
           'Domingo': 'Sunday',
         }[item.day],
-        opens: '06:00',
-        closes: '20:00',
-      })),
+        opens: `${opens.padStart(2, '0')}:00`,
+        closes: `${closes.padStart(2, '0')}:00`,
+      });
+      }).filter(Boolean),
   };
 }
 
